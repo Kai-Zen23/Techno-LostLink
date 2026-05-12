@@ -6,9 +6,36 @@ Our project aims to simplify this ordeal by creating a user-friendly, intuitive 
 LOFO promotes a more organized and accessible way of managing lost items, reducing the clutter in email inboxes, and fostering community by reuniting individuals with their cherished belongings. This project intends to enhance the college experience by providing a reliable and user-friendly platform for lost and found items.  
 
 ### Tech Stack:
-Android Studio  
-Backend: Java  
-Database: Firebase  
+Android Studio (Java)
+Backend: Firebase (Auth, Firestore, Storage, Realtime Database)
+Local Development: Firebase Local Emulator Suite
+
+### Recent Updates:
+- **Package Migration**: Successfully migrated the application package to `com.fourj.lofo`.
+- **Open Registration**: Removed the hardcoded college email domain restriction. Users can now register using any valid email address format.
+- **Local Testing Environment**: Integrated the Firebase Local Emulator Suite. The app uses `LofoApplication.java` to automatically route traffic to local emulators (`127.0.0.1` via `adb reverse` or `10.0.2.2` on AVD) during `Debug` builds, allowing for safe, offline testing without incurring cloud costs or modifying production data.
+
+### Prerequisites & Tools Needed:
+- **Android Studio** (Electric Eel or newer recommended)
+- **Java Development Kit (JDK) 17** (Bundled with modern Android Studio)
+- **Node.js & npm** (Required to install Firebase CLI)
+- **Firebase CLI** (`npm install -g firebase-tools`)
+
+### Installation & Setup:
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd Lost-and-Found-App
+   ```
+2. **Open in Android Studio:** Open the `Lost-and-Found-App` folder in Android Studio and let the initial Gradle Sync complete.
+3. **Connect to Firebase (Production):** Replace the `app/google-services.json` file with your own Firebase project credentials if you wish to deploy to live servers.
+4. **Build & Run:** Hit the 'Run' button in Android Studio to deploy the application to your emulator or physical device.
+
+### How to Run Locally with Firebase Emulator:
+1. Ensure you have the Firebase CLI installed (`npm install -g firebase-tools`).
+2. Run `firebase emulators:start` in the project directory.
+3. If testing on a physical device, run `adb reverse tcp:9099 tcp:9099`, `adb reverse tcp:8080 tcp:8080`, and `adb reverse tcp:9199 tcp:9199` to forward the emulator ports.
+4. Build and run the app in Debug mode via Android Studio.
 
 ### Module Wise Scope :
 User Registration and Authentication:  
