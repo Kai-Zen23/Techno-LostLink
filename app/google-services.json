@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722097972498",
+    "project_id": "lost-and-found-e379a",
+    "storage_bucket": "lost-and-found-e379a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722097972498:android:aea5f35a2e45dee9677fcb",
+        "android_client_info": {
+          "package_name": "com.fourj.lofo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd0WgB7uefa3Pycawe36UgA7haom1fKx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
